@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
 get("/forex", { :controller => "currencies", :action => "forex_home"})
 get("/forex/:from_currency", { :controller => "currencies", :action => "second_currency"})
+get("/forex/:from_currency/:to_currency", { :controller => "currencies", :action => "convert"})
 
 end
